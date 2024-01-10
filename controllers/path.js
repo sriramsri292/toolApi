@@ -14,7 +14,7 @@ TollGuruRouter.post('/api/tollguru/v1', async (req, res) => {
    
 
     const apiUrl = 'https://apis.tollguru.com/toll/v2/origin-destination-waypoints';
-    const apiKey = 'NLFQj8MDN7bhHnHgpmPNLnBJQ8HTjdLQ';
+    const apiKey = 'DqJ3mP9LQ7B3nnTDJ4JjDdfDG444LLqJ';
 
     const response = await axios.post(apiUrl, req.body, {
       headers: {
@@ -35,7 +35,7 @@ TollGuruRouter.post('/api', async (req, res) => {
   console.log('Request Payload is:', req.body);
   try {
     const apiUrl = 'https://apis.tollguru.com/toll/v2/complete-polyline-from-mapping-service';
-    const apiKey = 'NLFQj8MDN7bhHnHgpmPNLnBJQ8HTjdLQ';
+    const apiKey = 'DqJ3mP9LQ7B3nnTDJ4JjDdfDG444LLqJ';
 
     const response = await axios.post(apiUrl, {
       mapProvider: 'here',
